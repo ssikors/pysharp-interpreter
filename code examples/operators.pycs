@@ -1,0 +1,32 @@
+mut int solution = (2*(2 - 1)) / 2; # int solution = 1
+
+solution = 2.5 + 0.575;
+
+if ((true and false) or !false ) {
+  print('This is true');
+}
+
+mut bool cond = true;
+while (cond) {
+  int guess = input('Guess what number I\'m thinking of: ');
+  if (4 == guess) {
+    print('Correct!');
+    cond = false;
+  } else {
+    print('Wrong!');
+  }
+};
+
+# Listy
+list<int> integerList = [1,2,3,4]; # inicjalizuje tablicę liczb całkowitych
+
+# mut int count = 0;
+# while (count < |integerList|) {
+#  print(|integerList|);
+#  integerList[count] = |integerList| - integerList[count];
+#  count = count + 1;
+#};
+
+# wyjściowa lista to [4 - 1, 4 - 2, 4 - 3, 4 - 4] = [3,2,1,0]
+
+#print(integerList[0]); # 3

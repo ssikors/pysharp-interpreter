@@ -1,0 +1,8 @@
+def addition(int a, int b) -> int {
+   int result = a + b;
+   return result;
+};
+
+int three = addition(1, 2);
+
+return three;

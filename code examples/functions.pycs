@@ -1,0 +1,21 @@
+def CreateIntFromString(string myString) -> int {
+  int myInt = myString;
+  return myInt;
+};
+
+print(CreateIntFromString('123') - 1);
+
+def CountFromNumber(mut int number) -> void {
+  if (number > 0) {
+    print(number); 
+    number = number - 1;
+    CountFromNumber(number);
+  } else {
+    print('Done!');
+    return;
+  } 
+};
+
+CountFromNumber(5);
+
+return CreateIntFromString('123') - 1;
