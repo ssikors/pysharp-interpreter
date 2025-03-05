@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.CSharp.RuntimeBinder;
 using PySharpCompiler.Classes.Expressions;
 using PySharpCompiler.Classes.Expressions.Operators;
 using PySharpCompiler.Components;
@@ -49,7 +50,8 @@ namespace PySharpCompiler.Classes.InterpreterClasses
                     case OperatorType.Less:
                         return LessThan(left, right);
                 }
-            } catch
+            }
+            catch (RuntimeBinderException ex)
             {
                 ReportError($"Cannot use {opr} with {left} and {right}", left.Position);
             } 
@@ -165,7 +167,7 @@ namespace PySharpCompiler.Classes.InterpreterClasses
                 {
                     return Substract(left, right);
                 }
-            } catch
+            } catch (RuntimeBinderException ex)
             {
                 ReportError($"Cannot use {opr} with {left} and {right}", left.Position);
             }
