@@ -18,7 +18,7 @@ while (cond) {
 };
 
 # Listy
-list<int> integerList = [1,2,3,4]; # inicjalizuje tablicę liczb całkowitych
+list<int> integerList = [1,2,3,4]; # Initializes an array of ints
 
 # mut int count = 0;
 # while (count < |integerList|) {
@@ -27,6 +27,6 @@ list<int> integerList = [1,2,3,4]; # inicjalizuje tablicę liczb całkowitych
 #  count = count + 1;
 #};
 
-# wyjściowa lista to [4 - 1, 4 - 2, 4 - 3, 4 - 4] = [3,2,1,0]
+# output should be [4 - 1, 4 - 2, 4 - 3, 4 - 4] = [3,2,1,0]
 
 #print(integerList[0]); # 3
